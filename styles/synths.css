@@ -1,0 +1,40 @@
+.product {
+    height: 600px;
+}
+
+.new {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    background-color: rgb(248, 141, 1);
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+}
+
+.roland {
+    height: 100%;
+    margin-left: -6rem;
+}
+
+.montage {
+    width: 100%;
+    margin-top: -3rem;
+}
+
+.korg {
+    width: 100%;
+}
+
+.arturia {
+    width: 100%;
+    margin-top: -8rem;
+}
+
+.product-text h2 {
+    background-color: rgba(0, 0, 0, 0.742);
+}
+
+.product-text p {
+    background-color: rgba(0, 0, 0, 0.742);
+}

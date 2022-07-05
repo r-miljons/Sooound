@@ -1,0 +1,15 @@
+.product {
+    height: 700px;
+}
+
+.product img {
+    width: 100%;
+}
+
+.gibson {
+    margin-top: -3rem;
+}
+
+.bass {
+    margin-top: -1rem;
+}
