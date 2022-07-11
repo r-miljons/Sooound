@@ -1,0 +1,211 @@
+
+.header-wrap h1 {
+    color:rgb(208, 208, 208);
+    margin: 0 auto;
+}
+
+.product-wrap {
+    position: relative;
+    max-width: 1200px;
+    margin: 3rem auto;
+}
+
+.back {
+    color:rgb(97, 97, 97);
+}
+
+.back-arrow {
+    transform: rotate(180deg);
+}
+
+.product {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-img {
+    width: 500px;
+    height: 600px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    padding: 3rem;
+}
+
+.product-img img {
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    transition: all 0.5s;
+}
+
+.product-img:hover img {
+    transform: scale(1.1);
+}
+
+.product-img:hover {
+    cursor: zoom-in;
+}
+
+.product-info {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-info h1 {
+    margin-bottom: 2rem;
+}
+
+.about-product {
+    margin-bottom: 2rem;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.add-amount {
+    display: flex;
+    justify-content: space-between;
+    max-width: 220px;
+}
+
+.amount {
+    background-color: rgb(232, 232, 232);
+    text-align: center;
+    height: 3.3rem;
+    width: 4rem;
+    border: none;
+    font-family: "Rubik", "sans-serif";
+}
+
+.add-to-cart {
+    background-color: rgb(205, 120, 2);
+    color: rgb(237, 237, 237);
+    padding: 1rem;
+}
+
+.add-to-cart:hover {
+    background-color: rgb(248, 141, 1);
+}
+
+.features {
+    margin-bottom: 3rem;
+}
+
+.features h2 {
+    margin-bottom: 2rem;
+}
+
+.features ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.features ul li {
+    font-family: "Rubik", "sans-serif";
+    text-transform: none;
+    margin-bottom: 0.5rem;
+    display:list-item;
+}
+
+.re-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.re-products-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.re-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    height: 450px;
+    margin-bottom: 3rem;
+}
+
+.re-product-img {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.re-product-img img {
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.re-product-name {
+    text-align: center;
+    color: rgb(83, 83, 83);
+    margin-bottom: 0.3rem;
+}
+
+.see-product {
+    margin-top: auto;
+}
+
+.story {
+    padding: 0 4rem;
+}
+
+.story-wrap {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0 auto 4rem auto;
+    max-width: 1200px;
+    gap: 1rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.story-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 4rem 4rem 0;
+}
+
+.story-text h2 {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    color:rgb(29, 29, 29);
+}
+
+.story-text span {
+    color: rgb(205, 120, 2);
+}
+
+.story-text p {
+    color: rgb(103, 103, 103);
+    font-size: 1.1rem;
+}
+
+.story-img {
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.story-img img {
+    height: 100%;
+    margin-left: -20rem;
+}
+
+.pswp__counter {
+    font-family: "Rubik", "sans-serif";
+}
