@@ -75,6 +75,10 @@ li {
     width: 18rem;
 }
 
+.logo:hover {
+    cursor: pointer;
+}
+
 nav {
     height: fit-content;
 }
