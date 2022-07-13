@@ -31,6 +31,11 @@
     border-radius: 0.5rem;
     box-sizing: border-box;
     padding: 3rem;
+    position: relative;
+}
+
+.smaller-box {
+    height: 450px;
 }
 
 .product-img img {
@@ -38,6 +43,15 @@
     display: flex;
     margin: 0 auto;
     transition: all 0.5s;
+}
+
+.product-img-synth {
+    height: auto !important;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto !important;
 }
 
 .product-img:hover img {
@@ -142,12 +156,22 @@
     box-sizing: border-box;
     padding: 1rem;
     margin-bottom: 1rem;
+    position: relative;
 }
 
 .re-product-img img {
     height: 100%;
     display: flex;
     margin: 0 auto;
+}
+
+.re-product-img-synth{
+    width: 90%;
+    height: auto !important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto !important;
 }
 
 .re-product-name {

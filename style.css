@@ -25,9 +25,12 @@ li {
 
 /* ---------------- navigation ------------------- */
 
+
+
 .nav-wrap {
     padding: 0 4rem;
     background-color: rgb(24, 24, 24);
+    
 }
 
 .space-cart {

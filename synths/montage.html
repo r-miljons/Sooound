@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sooound - Music Store</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../styles/product.css">
+    <link rel="stylesheet" href="../node_modules/photoswipe/dist/photoswipe.css">
+    <script defer type="module" src="../script.js"></script>
+</head>
+<body>
+    <div class="nav-wrap">
+        <div class="space-cart">
+            <div class="space-navlogo">
+                <img onclick="location.href='../index.html'" class="logo" src="../assets/Sooound-logo.svg" alt="sooound logo">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../guitars/guitars.html">Guitars</a></li>
+                        <li><a href="../synths/synths.html">Synths</a></li>
+                        <li><a href="../amps/amps.html">Amps</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="cart-wrap">
+                <div class="cart-items">0</div>
+                <img class="cart" src="../assets/shopping-cart.png" alt="shopping cart">
+            </div>
+        </div>
+    </div>
+        <header>
+            <div class="header-wrap">
+                <h1>SYNTHESIZERS</h1>
+            </div>
+        </header>
+    <main>
+        <div class="product-wrap">
+            <a href="javascript:history.back()" class="back"><img class="back-arrow" src="../assets/right-arrow.svg" alt="back arrow"> Go Back</a>
+            <div class="product">
+                <div class="pswp-gallery" id="gallery--ampro2">
+                    <a href="./assets/montage/front.jpg" 
+                    data-pswp-width="1280" 
+                    data-pswp-height="804" 
+                    target="_blank">
+                        <div class="product-img smaller-box">
+                            <img class="product-img-synth" src="./assets/montage/thumbnail.png" alt="yamaha montage 6">
+                        </div>
+                    </a>
+                    <a href="./assets/montage/back.jpg" 
+                    data-pswp-width="1000" 
+                    data-pswp-height="1000" 
+                    target="_blank"></a>
+                    <a href="./assets/montage/profile.jpg" 
+                    data-pswp-width="600" 
+                    data-pswp-height="600" 
+                    target="_blank"></a>
+                </div>
+                <div class="product-info">
+                    <h1>YAMAHA MONTAGE6</h1>
+                    <p class="about-product">
+                        Yamaha's flagship Montage 6 synthesizer streamlines your workflow and rockets your sound creation and modulation capabilities up to a whole new level. 
+                        <br>
+                        <br>
+                        Built on the legacy of Yamaha's groundbreaking DX and Motif series keyboards, the Montage is driven by its programmable Motion Control matrix, which gives you fluid, interactive command over two powerful synthesis engines. 
+                        Your fingers will fly on the Montage 6's superb aftertouch-enabled, 61-note FSX semi-weighted keybed, as you modulate multiple parameters in real time with the aptly named Super Knob. 
+                        Whether you're a songwriter, gigging keyboardist, sound designer, or EDM producer, the Yamaha Montage will inspire you and elevate your creative game.
+                    </p>
+                    <p class="price">€ 2.949,00</p>
+                    <div class="add-amount">
+                        <input type="text" class="amount" value="1">
+                        <a href="#" class="add-to-cart">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+            <section class="features">
+                <h2>Features</h2>
+                <ul>
+                    <li>Aftertouch-enabled, 61-note FSX semi-weighted keybed</li>
+                    <li>Stereo 128-note polyphony, for full stereo sound without note stealing</li>
+                    <li>Motion Control matrix gives you fluid command over two powerful synthesis engines: AWM2, FM-X</li>
+                    <li>Super Knob lets you modulate multiple parameters in real time</li>
+                    <li>Envelope Follower lets you use any audio as a modulator for any synth parameter</li>
+                    <li>Motion Sequences — tempo-synched control sequences you can assign to any parameter</li>
+                </ul>
+            </section>
+            <section class="recommended">
+                <h2 class="re-title">RECOMMENDED FOR YOU</h2>
+                <div class="re-products-wrap">
+                    <div class="re-product">
+                        <div class="re-product-img"><img class="re-product-img-synth" src="./assets/arturia/thumbnail.png" alt="arturia MicroBrute"></div>
+                        <h2 class="re-product-name">Arturia MicroBrute</h2>
+                        <p class="re-price">€ 499,00</p>
+                        <a href="./arturia.html" class="see-product add-to-cart">SEE PRODUCT</a>
+                    </div>
+                    <div class="re-product">
+                        <div class="re-product-img"><img class="re-product-img-synth" src="../assets/system-8.png" alt="system-8 synthesizer"></div>
+                        <h2 class="re-product-name">Roland System-8</h2>
+                        <p class="re-price">€ 1.499,00</p>
+                        <a href="./system8.html" class="see-product add-to-cart">SEE PRODUCT</a>
+                    </div>
+                    <div class="re-product">
+                        <div class="re-product-img"><img class="re-product-img-synth" src="./assets/korg/thumbnail.png" alt="Korg Minilogue"></div>
+                        <h2 class="re-product-name">Korg Minilogue</h2>
+                        <p class="re-price">€ 439,00</p>
+                        <a href="./korg.html" class="see-product add-to-cart">SEE PRODUCT</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="story">
+            <div class="story-wrap">
+                <div class="story-text">
+                    <h2>GIVING YOU THE <br><span>TOOLS</span> YOU NEED</h2>
+                    <p>At Sooound, we are all musicians and understand the importance of great tone, whether practicing at home or on stage in a live environment. 
+                        All of our product sortiment is designed to be world class in both quality and tonal performance while giving you the best tools you need to find the sound in your head.
+                    </p>
+                </div>
+                <div class="story-img">
+                    <img src="../assets/james.jpg" alt="photo of james performing">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-wrap">
+            <div class="cool-line"></div>
+            <div class="footer-nav">
+                <img class="logo" src="../assets/Sooound-logo.svg" alt="sooound logo">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../guitars/guitars.html">Guitars</a></li>
+                    <li><a href="../synths/synths.html">Synths</a></li>
+                    <li><a href="../amps/amps.html">Amps</a></li>
+                </ul>
+            </div>
+            <p class="note">Founded in 1999 as a music equipment store specializing in electronic musical instruments, it is no exaggeration to say that Sooound has been integral to the creation of modern music in the area of Riga for the past two decades. 
+                Sooound provides products that have attracted and been loved by renowned musicians, creators, and hobbyists alike.
+            </p>
+            <div class="footer-more">
+                <p>Copyright © 2022. All Right Reserved.</p>
+                <div class="socials">
+                    <img src="../assets/fb-logo.svg" alt="facebook logo">
+                    <img src="../assets/twitter-logo.svg" alt="twitter logo">
+                    <img src="../assets/insta-logo.svg" alt="istagram logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
