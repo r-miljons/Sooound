@@ -4,7 +4,21 @@
 
 import { amplifiers, synthesizers, guitars } from "./products.js";
 
-// Amplifiers
+// ------------- Shopping cart --------------------
+
+let cart = [
+    {
+        id: '',
+        amount: ''
+    }
+];
+
+let addToCart = (id) => {
+    console.log(id)
+}
+
+
+// ------------- Amplifiers --------------------
 
 function renderAmp() {
     
@@ -52,7 +66,7 @@ function renderAmp() {
                 <p class="price">${price}</p>
                 <div class="add-amount">
                     <input type="text" class="amount" value="1">
-                    <a href="#" class="add-to-cart">ADD TO CART</a>
+                    <button class="add-to-cart" onclick="addToCart()">ADD TO CART</button>
                 </div>
             </div>
         </div>
@@ -108,6 +122,7 @@ function renderAmp() {
 
 renderAmp();
 
+// ------------- Sythesizers --------------------
 
 function renderSynth() {
     synthesizers.forEach((x) => {
@@ -154,7 +169,7 @@ function renderSynth() {
             <p class="price">${price}</p>
             <div class="add-amount">
                 <input type="text" class="amount" value="1">
-                <a href="#" class="add-to-cart">ADD TO CART</a>
+                <button class="add-to-cart" onclick="addToCart()">ADD TO CART</button>
             </div>
         </div>
         </div>
@@ -245,8 +260,8 @@ function renderGuitar() {
             <p class="price">${price}</p>
             <div class="add-amount">
                 <input type="text" class="amount" value="1">
-                <a href="#" class="add-to-cart">ADD TO CART</a>
-            </div>
+                <button class="add-to-cart" onclick="addToCart()">ADD TO CART</button>
+                </div>
         </div>
         </div>
         <section class="features">
