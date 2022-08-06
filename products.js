@@ -72,7 +72,7 @@ export const synthesizers = [
 			"Envelope Follower lets you use any audio as a modulator for any synth parameter",
 			"Motion Sequences — tempo-synched control sequences you can assign to any parameter",
 		],
-		thumbnail: "./assets/montage/thumbnail.png",
+		thumbnail: "../synths/assets/montage/thumbnail.png",
 		gallery: [
 			{
 				img: "./assets/montage/front.jpg",
@@ -127,7 +127,7 @@ export const synthesizers = [
 			"4-Voice polyphonic",
 			"37 Velocity sensitive slim keys",
 		],
-		thumbnail: "./assets/korg/thumbnail.png",
+		thumbnail: "../synths/assets/korg/thumbnail.png",
 		gallery: [
 			{
 				img: "./assets/korg/front.jpg",
@@ -242,7 +242,7 @@ export const amplifiers = [
 			"Volume, Gain, Bass, Treble",
 			"2 x 12AX7 (preamp) 1 x EL84 (power amp)",
 		],
-		thumbnail: "./assets/vox/thumbnail.png",
+		thumbnail: "../amps/assets/vox/thumbnail.png",
 		gallery: [
 			{
 				img: "./assets/vox/front.jpg",
@@ -297,7 +297,7 @@ export const amplifiers = [
 			"Controls: Presence, bass, middle, treble, master volume, preamp volume",
 			"Detachable power cable included",
 		],
-		thumbnail: "./assets/marshall/thumbnail.png",
+		thumbnail: "../amps/assets/marshall/thumbnail.png",
 		gallery: [
 			{
 				img: "./assets/marshall/front.jpg",
@@ -352,7 +352,7 @@ export const amplifiers = [
 			"Normal channel and vibrato channel with tube-driven reverb and tremolo effects",
 			"Vibrato channel with controls for volume, treble, bass, reverb, speed and intensity",
 		],
-		thumbnail: "./assets/fender/thumbnail.png",
+		thumbnail: "../amps/assets/fender/thumbnail.png",
 		gallery: [
 			{
 				img: "./assets/fender/front.jpg",
@@ -407,7 +407,7 @@ export const amplifiers = [
 			"Jam along to your favorite tunes or capture covers via the TRRS Line In/Streaming input",
 			"12 built-in effects add gloss and dimension to your playing",
 		],
-		thumbnail: "./assets/blackstar/thumbnail.png",
+		thumbnail: "../amps/assets/blackstar/thumbnail.png",
 		gallery: [
 			{
 				img: "./assets/blackstar/front.jpg",
@@ -522,7 +522,7 @@ export const guitars = [
 			"Tapered-shaft tuning machines; Posiflex graphite rods for neck reinforcement",
 			"Includes Deluxe Molded hardshell case",
 		],
-		thumbnail: "./assets/fender-bass.png",
+		thumbnail: "../guitars/assets/fender-bass.png",
 		gallery: [
 			{
 				img: "./assets/ampro2bass/front.png",
@@ -580,7 +580,7 @@ export const guitars = [
 	thumbnail: "../guitars/assets/es-339.png",
 	gallery: [
 		{
-			img: "./assets/es339/front.png",
+			img: "../guitars/assets/es339/front.png",
 			width: "1600",
 			height: "1600",
 		},

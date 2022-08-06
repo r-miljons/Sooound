@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sooound - Music Store </title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../styles/checkout.css">
+    <link rel="stylesheet" href="../styles/cart.css">
+    <script defer type="module" src="../script.js"></script>
+</head>
+<body>
+    <div class="nav-wrap">
+        <div class="space-cart">
+            <div class="space-navlogo">
+                <img onclick="location.href='../index.html'" class="logo" src="../assets/Sooound-logo.svg" alt="sooound logo">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../guitars/guitars.html">Guitars</a></li>
+                        <li><a href="../synths/synths.html">Synths</a></li>
+                        <li><a href="../amps/amps.html">Amps</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="cart-wrap"></div>
+        </div>
+    </div>
+    <main class="checkout-wrap">
+        <a href="javascript:history.back()" class="back"><img class="back-arrow" src="../assets/right-arrow.svg" alt="back arrow"> Go Back</a>
+        <section class="checkout-area">
+            <div class="shipping-form">
+                <h1 class="checkout-text">Checkout</h1>
+                <form action="" method="post" id="checkout-form">
+                    <p class="section-info">Billing details</p>
+                    <div class="form-grid">
+                        <div class="grid-section">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="" required>
+                        </div>
+                        <div class="grid-section">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" placeholder="" required>
+                        </div>
+                        <div class="grid-section">
+                            <label for="number">Number</label>
+                            <input type="tel" minlength="8" id="number" placeholder="" required>
+                        </div>
+                    </div>
+                    <p class="section-info">Shipping info</p>
+                    <div class="form-grid">
+                        <div class="grid-section">
+                            <label for="country">Country</label>
+                            <select id="country" name="country" required>
+                                <option value="" disabled selected hidden>Select a Country</option>
+                                <option value="AT">Austria</option>
+                                <option value="BY">Belarus</option>
+                                <option value="BE">Belgium</option>
+                                <option value="BG">Bulgaria</option>
+                                <option value="CZ">Czech Republic</option>
+                                <option value="DK">Denmark</option>
+                                <option value="EE">Estonia</option>
+                                <option value="FI">Finland</option>
+                                <option value="FR">France</option>
+                                <option value="DE">Germany</option>
+                                <option value="GR">Greece</option>
+                                <option value="GL">Greenland</option>
+                                <option value="HU">Hungary</option>
+                                <option value="IS">Iceland</option>
+                                <option value="IT">Italy</option>
+                                <option value="LV">Latvia</option>
+                                <option value="LI">Liechtenstein</option>
+                                <option value="LT">Lithuania</option>
+                                <option value="MC">Monaco</option>
+                                <option value="NL">Netherlands</option>
+                                <option value="NO">Norway</option>
+                                <option value="PL">Poland</option>
+                                <option value="PT">Portugal</option>
+                                <option value="SK">Slovakia</option>
+                                <option value="SI">Slovenia</option>
+                                <option value="ES">Spain</option>
+                                <option value="SE">Sweden</option>
+                                <option value="UA">Ukraine</option>
+                                <option value="GB">United Kingdom</option>
+                            </select>
+                        </div>
+                        <div class="grid-section">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" placeholder="" required>
+                        </div>
+                        <div class="grid-section">
+                            <label for="city">City</label>
+                            <input type="text" id="city" placeholder="" required>
+                        </div>
+                        <div class="grid-section">
+                            <label for="zip">Zip Code</label>
+                            <input type="text" id="zip" placeholder="" required>
+                        </div>
+                    </div>
+                    <p class="section-info">Payment Method</p>
+                    <div class="payment">
+                        <div class="payment-method">
+                            <input class="radio" type="radio" name="pay" id="bank" value="Bank Transfer" checked>
+                            <label class="radio" for="bank">Bank Transfer</label>
+                        </div>
+                        <div class="payment-method">
+                            <input class="radio" type="radio" name="pay" id="mail" value="Mail Money">
+                            <label class="radio" for="mail">Mail Money</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="purchase-summary">
+                <!-- summary goes here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-wrap">
+            <div class="cool-line"></div>
+            <div class="footer-nav">
+                <img onclick="location.href='../index.html'" class="logo" src="../assets/Sooound-logo.svg" alt="sooound logo">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../guitars/guitars.html">Guitars</a></li>
+                    <li><a href="../synths/synths.html">Synths</a></li>
+                    <li><a href="../amps/amps.html">Amps</a></li>
+                </ul>
+            </div>
+            <p class="note">Founded in 1999 as a music equipment store specializing in electronic musical instruments, it is no exaggeration to say that Sooound has been integral to the creation of modern music in the area of Riga for the past two decades. 
+                Sooound provides products that have attracted and been loved by renowned musicians, creators, and hobbyists alike.
+            </p>
+            <div class="footer-more">
+                <p>Copyright © 2022. All Right Reserved.</p>
+                <div class="socials">
+                    <img src="../assets/fb-logo.svg" alt="facebook logo">
+                    <img src="../assets/twitter-logo.svg" alt="twitter logo">
+                    <img src="../assets/insta-logo.svg" alt="istagram logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

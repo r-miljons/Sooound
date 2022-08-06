@@ -25,12 +25,9 @@ li {
 
 /* ---------------- navigation ------------------- */
 
-
-
 .nav-wrap {
     padding: 0 4rem;
     background-color: rgb(24, 24, 24);
-    
 }
 
 .space-cart {
@@ -42,8 +39,26 @@ li {
 
 .cart-wrap {
     display: flex;
+    z-index: 98;
+    position: fixed;
     width: 2rem;
     flex-direction: column;
+    top: 16px;
+    right: 64px;
+}
+
+.cart-background {
+    position: absolute;
+    bottom: -6px;
+    left: -5px;
+    width: 2.7rem;
+    height: 2.7rem;
+    background-color: rgba(24, 24, 24, 0.721);
+    border-radius: 4px;
+}
+
+.cart-wrap:hover {
+    cursor: pointer;
 }
 
 .cart {
