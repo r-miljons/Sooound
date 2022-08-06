@@ -767,7 +767,7 @@ const lightbox = new PhotoSwipeLightbox({
 	children: "a",
 	showHideAnimationType: "fade",
 	zoomAnimationDuration: false,
-	pswpModule: () => import("./node_modules/photoswipe/dist/photoswipe.esm.js"),
+	pswpModule: () => import("../node_modules/photoswipe/dist/photoswipe.esm.js"),
 });
 
 lightbox.init();
