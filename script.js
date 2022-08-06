@@ -760,7 +760,7 @@ if (document.querySelector('.product-img')) {
 
 // PhotoSwipeLightbox
 
-import PhotoSwipeLightbox from "./node_modules/photoswipe/dist/photoswipe-lightbox.esm.js";
+import PhotoSwipeLightbox from "../node_modules/photoswipe/dist/photoswipe-lightbox.esm.js";
 
 const lightbox = new PhotoSwipeLightbox({
 	gallery: "#gallery--ampro2",
