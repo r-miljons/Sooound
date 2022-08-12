@@ -1,3 +1,74 @@
+// -------------- Nav bar ----------------------
+
+function renderNavBar() {
+    const htmlData = `<div class="space-cart">
+        <div class="space-navlogo">
+            <img src="${fixRelativePath("../assets/hamburger.svg")}" alt="menu" class="hamburger">
+            <img onclick="location.href='${fixRelativePath("../index.html")}'" class="logo" src="${fixRelativePath("../assets/Sooound-logo.svg")}" alt="sooound logo">
+            <nav>
+                <ul>
+                    <li><a href="${fixRelativePath("../index.html")}">Home</a></li>
+                    <li><a href="${fixRelativePath("../guitars/guitars.html")}">Guitars</a></li>
+                    <li><a href="${fixRelativePath("../synths/synths.html")}">Synths</a></li>
+                    <li><a href="${fixRelativePath("../amps/amps.html")}">Amps</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="cart-wrap"></div>
+    </div>`
+
+    document.querySelector('.nav-wrap').innerHTML = htmlData;
+}
+renderNavBar();
+
+function renderMobileNavBar() {
+    const htmlData = `<button class="exit-menu">Done</button>
+    <ul class="side-menu-nav">
+        <li><a href="${fixRelativePath("../index.html")}">Home</a></li>
+        <li><a href="${fixRelativePath("../guitars/guitars.html")}">Guitars</a></li>
+        <li><a href="${fixRelativePath("../synths/synths.html")}">Synths</a></li>
+        <li id="bottom-border"><a href="${fixRelativePath("../amps/amps.html")}">Amps</a></li>
+    </ul>`
+    const sideMenu = document.createElement("div");
+    sideMenu.className = "side-menu";
+    sideMenu.innerHTML = htmlData;
+    document.body.appendChild(sideMenu);
+    sideMenu.style.animation = "slideIn 0.3s forwards";
+
+    setTimeout(() => {
+        document.addEventListener('click', closeWhenClickedOutside);
+        document.querySelector('.exit-menu').addEventListener('click', closeNav);
+    }, 300);
+
+    function closeNav() {
+        try {
+            sideMenu.style.animation = 'slideOut 0.3s forwards';
+            document.removeEventListener('click', closeNav);
+            document.querySelector('.exit-menu').removeEventListener('click', closeNav);
+            setTimeout(() => {
+                try {
+                    document.body.removeChild(sideMenu);
+                } catch (e) {
+                    return;
+                }
+            }, 300);
+        } catch (e) {
+            return;
+        }
+    }
+
+    function closeWhenClickedOutside(e) {
+        if (document.querySelector('.side-menu')) {
+            if (document.querySelector('.side-menu').contains(e.target)){
+                return;
+            } else {
+                closeNav();
+            }
+        }
+    }
+}
+
+document.querySelector('.hamburger').addEventListener('click', renderMobileNavBar);
 
 // -------------- Rendering indivudial products per category ----------------------
 
@@ -759,12 +830,25 @@ if (document.querySelector('.product-img')) {
 
 // PhotoSwipeLightbox
 
-// import PhotoSwipeLightbox from 'photoswipe/dist/photoswipe-lightbox.esm.js';
+// import PhotoSwipeLightbox from './node_modules/photoswipe/dist/photoswipe-lightbox.esm.js';
 // const lightbox = new PhotoSwipeLightbox({
-// 	gallery: "#gallery--ampro2",
-// 	children: "a",
-// 	showHideAnimationType: "fade",
-// 	zoomAnimationDuration: false,
-// 	pswpModule: () => import('photoswipe/dist/photoswipe.esm.js')
+//   gallery: '#gallery--ampro2',
+//   children: 'a',
+//   showHideAnimationType: "fade",
+//   zoomAnimationDuration: false,
+//   pswpModule: () => import('./node_modules/photoswipe/dist/photoswipe.esm.js')
 // });
+// lightbox.init();
+
+// import PhotoSwipeLightbox from '/photoswipe/photoswipe-lightbox.esm.js';
+// import PhotoSwipe from '/photoswipe/photoswipe.esm.js';
+
+// const lightbox = new PhotoSwipeLightbox({
+//   gallery: '#gallery--ampro2',
+//   children: 'a',
+//   showHideAnimationType: "fade",
+//   zoomAnimationDuration: false,
+//   pswpModule: PhotoSwipe
+// });
+
 // lightbox.init();

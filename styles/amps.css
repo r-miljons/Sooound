@@ -17,3 +17,69 @@
     width: 100%;
     margin-top: -2rem;
 }
+
+@media screen and (max-width: 1320px) {
+    .blackstar {
+        height: auto;
+        width: 100%;
+        margin-left: 0;
+    }
+    .marshall {
+        height: auto;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .blackstar {
+        height: 100%;
+        width: auto;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .marshall {
+        height: 100%;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .marshall {
+        margin-left: 0;
+    }
+    
+    .vox {
+        margin-top: 0;
+        width: 100%;
+        height: auto;
+    }
+    .fender {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .vox {
+        height: 100%;
+        width: auto;
+    }
+    .fender {
+        height: 100%;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .blackstar {
+        margin-left: -8rem;
+    }
+    .marshall {
+        margin-left: -8rem;
+    }
+}

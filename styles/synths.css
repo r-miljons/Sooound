@@ -38,3 +38,55 @@
 .product-text p {
     background-color: rgba(0, 0, 0, 0.742);
 }
+
+@media screen and (max-width: 1320px) {
+    .roland {
+        height: auto;
+        width: 100%;
+        margin-left: 0;
+    }
+    .montage {
+        margin-top: -25rem;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .roland {
+        height: 100%;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .montage {
+        margin-top: -10rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .roland {
+        margin-left: -25rem;
+    }
+    .montage {
+        margin-top: 0;
+    }
+    .arturia {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .montage {
+        height: 100%;
+        width: auto;
+    }
+
+    .korg {
+        height: 100%;
+        width: auto;
+    }
+    .arturia {
+        height: 100%;
+        width: auto;
+    }
+}

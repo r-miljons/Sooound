@@ -13,3 +13,17 @@
 .bass {
     margin-top: -1rem;
 }
+
+@media screen and (max-width: 600px) {
+    .product img {
+        width: auto;
+        height: 100%;
+    }
+    .gibson {
+        margin-top: 0;
+    }
+    
+    .bass {
+        margin-top: 0;
+    }
+}

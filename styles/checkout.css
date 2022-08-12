@@ -11,6 +11,7 @@ h3 {
     position: relative;
     max-width: 1200px;
     margin: 3rem auto;
+    padding: 0 4rem;
 }
 
 .back {
@@ -49,6 +50,7 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-auto-rows: 1fr;
     column-gap: 1.5rem;
     row-gap: 1.5rem;
 }
@@ -123,6 +125,7 @@ input,select {
 .order-flex {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 0.5rem;
 }
 
@@ -221,4 +224,47 @@ input,select {
 .return-home:hover {
     background-color: rgb(248, 141, 1);
     cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .checkout-wrap {
+        padding: 0 1rem;
+        margin: 1.5rem 0;
+    }
+    #country {
+        padding-left: 5px;
+    }
+    input {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .checkout-area {
+        flex-direction: column;
+    }
+    .shipping-form {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .purchase-summary {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    .grand {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .payment {
+        flex-direction: column;
+        margin: 2rem 0 1rem;
+    }
 }

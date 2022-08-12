@@ -2,6 +2,21 @@
 
 /* ---------------- header ------------------- */
 
+header {
+    padding: 4rem;
+    background-color: rgb(24, 24, 24);
+    overflow: hidden;
+}
+
+.header-wrap {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .header-text h1 {
     background-image: url("../assets/green_texture.jpg");
     background-position: center;
@@ -45,6 +60,53 @@
 
 .system-8 {
     width: 100%;
+}
+
+@media screen and (max-width: 1190px) {
+    header {
+        padding: 2rem 1rem;
+    }
+    .header-wrap {
+        position: relative;
+    }
+    .header-wrap img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+    .header-text {
+        z-index: 1;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+    .c {
+        background-color: rgba(0, 0, 0, 0.667);
+    }
+    .header-text p.b {
+        margin-bottom: 0;
+        padding: 0.5rem;
+        width: max-content;
+    }
+    .header-text p.c {
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header-wrap img {
+        height: 100%;
+        width: auto;
+    }
+    .header-text h1 {
+        font-size: 3rem;
+    }
+    .header-text p.b {
+        width: 200px;
+    }
+    .header-text {
+        margin-left: 0;
+    }
 }
 
 /* ---------------- products ------------------- */
@@ -110,12 +172,21 @@
     text-align: center;
 }
 
+@media screen and (max-width: 900px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+        gap: 6rem;
+    }
+}
+
 /* ---------------- showcase ------------------- */
 
 .showcase-wrap {
     display: block;
     margin: 0 auto;
     max-width: 1200px;
+    overflow: hidden;
 }
 
 .showcase {
@@ -159,6 +230,36 @@
     background-color: rgb(69, 69, 69);
 }
 
+@media screen and (max-width: 1310px) {
+
+}
+
+@media screen and (max-width: 1190px) {
+    .showcase {
+        flex-direction: column-reverse;
+    }
+    .showcase-text {
+        text-align: center;
+        margin: 0 0 1rem;
+    }
+    .showcase-wrap {
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .showcase img {
+        width: 130%;
+    }
+    .showcase h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    .showcase {
+        padding: 0 2rem 0.5rem;
+    }
+}
+
 /* ---------------- product synth ------------------- */
 
 .product-synth-wrap {
@@ -197,6 +298,30 @@
 
 .hollow:hover {
     background-color: rgba(254, 254, 254, 0.332);
+}
+
+@media screen and (max-width: 1190px) {
+    .product-synth-wrap {
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+        margin-top: -2rem;
+    }
+    
+    .product-synth {
+        padding: 2rem;
+    }
+    .product-synth-text {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product-synth {
+        background-position-x: 450px;
+    }
+    .product-synth-text h2 {
+        font-size: 1.4rem;
+    }
 }
 
 /* ---------------- product guitar ------------------- */
@@ -246,6 +371,29 @@
     background-color: rgba(183, 183, 183, 0.332);
 }
 
+@media screen and (max-width: 1190px) {
+    .product-guitar-wrap {
+        padding: 0 1rem;
+    }
+    .product-guitar {
+        display:flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .product-guitar-text {
+        padding: 2rem;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .product-guitar-text h2 {
+        margin-bottom: 1.5rem;
+    }
+    .product-guitar-img {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
 /* ---------------- story ------------------- */
 
 .story {
@@ -292,5 +440,34 @@
 .story-img img {
     height: 100%;
     margin-left: -20rem;
+}
+
+@media screen and (max-width: 1190px) {
+    .story-wrap {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: -2rem auto 1rem auto;
+        gap: 1rem;
+    }
+    .story {
+        padding: 0 1rem;
+    }
+    .story-text {
+        padding: 0 1rem 2rem;
+    }
+    .story-text h2 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    .story-img img {
+        margin-bottom: -4px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .story-img img {
+        height: 300px;
+        margin-left: -15rem;
+    }
 }
 

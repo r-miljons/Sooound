@@ -5,6 +5,7 @@
     z-index: 99;
     border-radius: 10px;
     width: 350px;
+    height: max-content;
     top: 4rem;
     right: 6.5rem;
     box-shadow: 0 0 0 200vw rgba(0, 0, 0, 0.175);
@@ -141,4 +142,21 @@
 .checkout:hover {
     background-color: rgb(248, 141, 1);
     cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .shopping-cart {
+        top: 5.4rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 250px;
+    }
+    .cart-item-name-price {
+        width: 90px;
+        margin-right: 0;
+    }
+    .cart-item-name {
+        width: 100%;
+    }
 }
