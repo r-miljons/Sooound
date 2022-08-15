@@ -260,11 +260,24 @@ input,select {
     .grand {
         gap: 1rem;
     }
+    .success-box {
+        left: 1rem;
+        right: 1rem;
+    }
+    .success-img {
+        flex-shrink: 0;
+    }
 }
 
 @media screen and (max-width: 420px) {
     .payment {
         flex-direction: column;
         margin: 2rem 0 1rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .success-img {
+        display: none;
     }
 }
